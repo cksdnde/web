@@ -69,7 +69,7 @@ main h2{
   font-size:3.5rem;
   margin:2rem 0;
   letter-spacing:3px;
-  font-family:'Varela Round', sans-serif; /* 웹 폰트 추가 */
+  font-family:'Varela Round', sans-serif; 
 }
 main p{
   max-width:500px;
@@ -126,7 +126,7 @@ main h2 span::after{
   }
 }
 
-/* about_me.css */
+
 section{
   font-family:'Poppins', sans-serif;
   padding:5rem 0;
@@ -139,7 +139,7 @@ section .title{
 }
 section .title h4{
   font-size:1.35rem;
-  color:#ed4848;
+  color:red;
   position:relative;
 }
 section .title h2{
@@ -148,22 +148,22 @@ section .title h2{
 section .title p{
   font-size:1.15rem;
 }
-/* float 속성 해제 */
+
 section .about-self::after{
   content:"";
   clear:both;
   display:block;
 }
-/* 본문 너비 절반 지정 & 왼쪽 배치 */
+
 section .about-self .left{
   width:50%;
   float:left;
 }
-/* 이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정 */
+
 section .about-self .left img{
   max-width:100%;
 }
-/* 본문 너비 절반 지정 & 오른쪽 배치 */
+
 section .about-self .right{
   width:50%;
   float:left;
@@ -176,7 +176,7 @@ section .about-self .right h3{
 }
 /* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
 section .about-self .right h3 strong{
-  color:#ed4848;
+  color:red;
 }
 /* 본문 오른쪽 p 태그의 크기와 여백 지정 */
 section .about-self .right p{
@@ -188,9 +188,7 @@ section .about-self .right .social a{
   font-size:2.5rem;
   margin-right:0.2rem;
 }
-/* End about_me.css */
-/* what_i_do.css */
-/* float 속성 해제*/
+
 section .do-me::after{
   content:"";
   display:block;
@@ -212,7 +210,7 @@ section .do-me .do-inner:last-child{
 /* 아이콘 폰트 크기와 색상 */
 section .do-me .do-inner .icon i{
   font-size:2.5rem;
-  color:#ff6a6a;
+  color: red;
 }
 /* HTML5, CSS3, BootStrap v5.0 텍스트 크기와 간격 */
 section .do-me .do-inner .content h3{
@@ -269,7 +267,7 @@ section.portfolio .portfolio-inner img{
 }
 /* strong 태그 색상과 간격 */
 section.portfolio .portfolio-inner strong{
-  color:#ff6a6a;
+  color: red;
   margin:0.5rem 0;
   display:block;
 }
@@ -306,14 +304,16 @@ section.contact .contact-me .left .card .icon i{
   margin-right:15px;
 }
 
-section.contact .contact-me .right{ 
+section.contact .contact-me .right { 
   float:left;
   width:65%;
-  margin-left:5%;
+  margin-left:-2%;
   margin-bottom:2rem;
   border:1px solid #ccc;
   padding:1rem;
+
 }
+
 /* form-group 사이 간격 지정 */
 section.contact .contact-me .right .form-group{
   margin-bottom:1.25rem;
@@ -354,9 +354,7 @@ section.contact .contact-me .right .form-group textarea:focus{
 section.contact .contact-me .right button{
   width:100%;
   padding:1rem;
-  background-color:#f78b00;
   border:none;
-  color:white;
 }
 
 /* End contact_with_me.css */
@@ -519,21 +517,17 @@ header.active{
 
 #University {
   font-size: 23px;
-  color: red
+  color: #719ECE
 }
 
 #University2 {
   font-size: 30px;
 }
 
-#Favorite {
-  color: #4a65f6;
-  font-size: 23px;
-  
-}
 
 #Animals {
   font-size: 21px;
+  color:#719ECE;
 }
 
 
@@ -546,7 +540,7 @@ header.active{
 
 #Music {
   font-size: 15px;
-  color: red;
+  color: #719ECE
 }
 
 .icon img {
@@ -554,4 +548,26 @@ header.active{
   min-height: 210px;
   height: auto;
   
+}
+
+#Find {
+  font-size: 20px;
+  color: #719ECE;
+}
+
+.contact-me .right {
+  margin-right: 100px;
+}
+
+
+#Send {
+  color:black;
+  background-color: #719ECE;
+  font-size: 20px;
+}
+
+
+#Favorites {
+  color: red;
+  font-size: 20px;
 }

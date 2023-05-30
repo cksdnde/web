@@ -26,8 +26,6 @@
     writeTxt();
   })();
   
-  /* scroll_request.js */
-  /* 수직 스크롤이 발생하면 header 태그에 active 클래스 추가 및 삭제 */
   const headerEl = document.querySelector("header");
   window.addEventListener('scroll', function(){
     requestAnimationFrame(scrollCheck);
@@ -40,27 +38,13 @@
       headerEl.classList.remove("active");
     }
   }
-  /* end scroll_request.js */
-  document.getElementById("Learn-more").addEventListener("click", function() {
-    // 이동할 페이지의 URL
-    var url = "http://example.com/more-info";
   
-    // 새로운 페이지로 이동
-    window.location.href = url;
-  })
-  /* move.js */
-  /* 애니메이션 스크롤 이동 */
   const animationMove = function(selector){
-    // ① selector 매개변로 이동할 대상 요소 노드 가져오기
     const targetEl = document.querySelector(selector);
-    // ② 현재 브라우저의 스크롤 정보(y 값)
     const browserScrollY = window.pageYOffset;
-    // ③ 이동할 대상의 위치(y 값)
     const targetScorllY = targetEl.getBoundingClientRect().top + browserScrollY;
-    // ④ 스크롤 이동
     window.scrollTo({ top: targetScorllY, behavior: 'smooth' });
   };
-  // 스크롤 이벤트 연결하기
   const scollMoveEl = document.querySelectorAll("[data-animation-scroll='true']"); 
   for(let i = 0; i < scollMoveEl.length; i++){
     scollMoveEl[i].addEventListener('click', function(e){
@@ -68,12 +52,13 @@
       animationMove(target);
     });
   }
-  /* End move.js */
 
+
+  /* Learn-more 버튼 Event 하고 누르면 링크로 가기 */
   const button = document.getElementById("Learn-more");
 
   button.addEventListener('mouseover', () => {
-    button.style.transform = 'scale(1.1';
+    button.style.transform = 'scale(1.2';
   });
 
   button.addEventListener('mouseout', () => {
@@ -83,4 +68,54 @@
   button.addEventListener('click', () => {
     window.location.href = ('https://sites.google.com/view/pyeongtaekuniversity/%ED%99%88?authuser=3');
   });
+
+
+  /* 질문 저장하는 리스트 */
+  let questions = []; 
+
+    function submitQuestion() {
+      let question = document.getElementById("questionInput").value;
+      questions.push(question);
+
+      
+      let questionElement = document.createElement("div");
+      questionElement.innerText = question;
+
+      
+      let questionContainer = document.getElementById("questionContainer");
+      questionContainer.appendChild(questionElement);
+
+      
+      document.getElementById("questionForm").reset();
+    }
+
+    /* 질문 저장하는 함수 */
+    function saveMessage() {
+      let message = document.getElementById("msg").value;
+      let email = document.getElementById("eml").value;
+  
+      let messageList = document.getElementById("messageList");
+      let list = document.createElement("li");
+      list.innerText = "(" +  email + ")" +  "\n-" + message;
+      messageList.appendChild(list);
+  
+      
+      document.getElementById("name").value = "";
+      document.getElementById("msg").value = "";
+    }
+
+    /* Send 버튼 Event 설정 */
+    const button2 = document.getElementById("Send");
+
+    button2.addEventListener('mouseover', () => {
+      button2.style.transform = 'scale(1.01';
+    });
+  
+    button2.addEventListener('mouseout', () => {
+      button2.style.transform = 'scale(1)';
+    });
+
+
+    
+
 

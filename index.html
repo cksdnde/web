@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<div>
   <!-- header -->
   <header>
     <div class="container">
@@ -39,24 +39,25 @@
           </li>
           <li>
             <button data-animation-scroll="true" data-target="#where">
-                
+              Question
             </button>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <!-- //end header -->
-  <!-- main -->
+  
+  
   <main id="main">
     <div class="container">
-      <h4>Let me introduce myself<br></h4>
+      <h4>Let me introduce myself<br></h4><br><br><br>
       <h2 class="active"> <span></span></h2>
       <p></p>
     </div>
   </main>
-  <!-- //end Main -->
-  <!-- About Me -->
+  
+
+  <!-- Introduce -->
   <section id="about" class="about">
     <div class="container">
       <div class="title">
@@ -77,7 +78,7 @@
           <p><span id="University">Email: </span> </p>
           <p>- chandol1212@ptu.ac.kr</p><br>
           <p><span id="University">Address</span></p>
-          <p>- Gangdong gu, Seoul</p><br>
+          <p>- Gangdong gu, Seoul</p><br><br><br>
           
         
 
@@ -99,37 +100,30 @@
       </div>
     </div>
   </section>
-  <!-- end About Me -->
-  <!-- What I Do -->
+  
+ 
+  <!-- University -->
   <section id="features" class="do">
     <div class="container">
       <div class="title">
         <h4>what is </h4>
-        <h2>Pyeongtaek University</h2>
+        <h2>Pyeongtaek University</h2><br><br>
+        <h3>Hi!</h3><br>
+        <h3>Press <strong id="Find">"learn more"</strong> button to find out more about Pyeongtaek University!</h3>
       </div>
       <div class="content">
-        <div class="map-container">
-          <div id="map"></div>
-        </div>
         <div class="in-container">
-          <h2></h2>
           <button id="Learn-more">Learn more</button>
         </div>
       </div>
-      
     </div>  
   </section>
   
-  
-  <!-- //end What I Do -->
-  <!-- Background -->
-  <div class="bg"></div>
-  <!-- //end Background-->
-  <!-- PortFolio -->
+  <!-- Animals -->
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="title">
-        <h3 id="Favorite">The animals,</h3>
+        <h3 id="Favorites">The animals,</h3>
         <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I raised</h2>
       </div>
       <div class="portfolio-me">
@@ -145,29 +139,12 @@
         </div>
         <div class="portfolio-inner">
           <img src="images/animal-gd83d0b67c_640.jpg" alt="" id="Rabbit"><br>
-          <strong id="Animals">Rabbit</strong>
-          
+          <strong id="Animals">Rabbit</strong>         
         </div>
-        <!--<div class="portfolio-inner">
-          <img src="images/mock4.png" alt="">
-          <strong>APP</strong>
-          <h3>FaceBook Clone</h3>
-        </div>
-        <div class="portfolio-inner">
-          <img src="images/mock5.png" alt="">
-          <strong>APP</strong>
-          <h3>Netflix Clone</h3>
-        </div>
-        <div class="portfolio-inner">
-          <img src="images/mock6.png" alt="">
-          <strong>WEB</strong>
-          <h3>FirmBee Web</h3>
-        </div>-->
       </div>
     </div>
   </section>
-  <!-- //end PortFolio -->
-   <!-- Contact With Me -->
+  <!-- My Favorite Music -->
    <section id="contact" class="do">
     <div class="container">
       <div class="title">
@@ -213,10 +190,38 @@
           </div>
         </div>
     </div>
-  </section>  
+  </section> 
+  <!-- Question for me -->
+  <section id="where" class="contact" >
+    <div class="container">
+      <div class="title">
+        <h4>Question</h4>
+        <h2>Write It Here!</h2>
+      </div>
+      <div class="contact-me">
+        <div class="right">
+          <form action="#">
+            <div class="form-group">
+              <label for="eml">Email</label>
+              <input type="text" id="eml">
+            </div>
+            <div class="form-group">
+              <label for="msg">Content</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <button onclick="saveMessage()" id="Send">Send</button>
+          </form>
+        </div>
+        <div class="saved-messages">
+          <h3>Messages:</h3>
+          <ul id="messageList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtNuzdWZ_e7EOs9GUKe2JARekU3ghGehA&callback=initMap" async defer></script>
-  <!-- end Contact With Me -->
-  <!-- script 태그는 수정하지 않습니다. -->
+  
   <script src="script.js"></script>
 </body>
 </html>
