@@ -515,7 +515,7 @@ header.active{
     cursor: pointer;
 }
 
-#University {
+.University {
   font-size: 23px;
   color: #719ECE
 }
@@ -525,9 +525,9 @@ header.active{
 }
 
 
-#Animals {
-  font-size: 21px;
-  color:#719ECE;
+.Animals {
+  font-size: 20px;
+  color: #719ECE;
 }
 
 
@@ -538,7 +538,7 @@ header.active{
   max-height: 380px;
 }
 
-#Music {
+.Music {
   font-size: 15px;
   color: #719ECE
 }
