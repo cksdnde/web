@@ -90,7 +90,11 @@
     }
 
     /* 질문 저장하는 함수 */
-    function saveMessage() {
+    function saveMessage(event) {
+      
+      /* 버튼 누르면 창이 초기화 되서 Messages가 지워지는 문제 해결 */
+      event.preventDefault();
+
       let message = document.getElementById("msg").value;
       let email = document.getElementById("eml").value;
   
