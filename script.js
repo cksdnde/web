@@ -1,6 +1,6 @@
 (function(){
     const spanEl = document.querySelector("main h2 span");
-    const txtArr = ['Pyeongtaek University', 'My favorite movie', 'My favorite music', 'My favorite thing'];
+    const txtArr = ['Pyeongtaek University', 'The animals, I raised', 'My favorite music', 'My favorite thing'];
     let index = 0;
     let currentTxt = txtArr[index].split("");
     function writeTxt(){

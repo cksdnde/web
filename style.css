@@ -305,6 +305,7 @@ section.contact .contact-me .left .card .icon i{
   font-size:2rem;
   margin-right:15px;
 }
+
 section.contact .contact-me .right{ 
   float:left;
   width:65%;
@@ -514,4 +515,43 @@ header.active{
     color: black;
     font-weight: bold;
     cursor: pointer;
+}
+
+#University {
+  font-size: 23px;
+  color: red
+}
+
+#University2 {
+  font-size: 30px;
+}
+
+#Favorite {
+  color: #4a65f6;
+  font-size: 23px;
+  
+}
+
+#Animals {
+  font-size: 21px;
+}
+
+
+#Rabbit {
+  width: 570px;
+  height: 208px;
+  max-width: 100%;
+  max-height: 380px;
+}
+
+#Music {
+  font-size: 15px;
+  color: red;
+}
+
+.icon img {
+  width: 100%;
+  min-height: 210px;
+  height: auto;
+  
 }
